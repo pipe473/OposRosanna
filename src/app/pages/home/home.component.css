@@ -335,7 +335,7 @@
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(6, min-content);
         grid-gap: 20px;
-        padding-top: 85%;
+        padding-top: 65%;
     }
     
     .box1{
@@ -493,149 +493,16 @@
         border-radius: 50px;
     }
     
-    #cameoImage {
+    /* #cameoImage {
         margin-left: 126%;
         margin-top: 33%;
         width: 90%;
         font-weight: 400;
         border: 2.1px solid #080808ce;
         border-radius: 200px;
-        /* filter: grayscale(1); */
+        filter: grayscale(1);
         opacity: 0.7;
-    }
-    
-    .info-10__text{
-        grid-row: 8 / 11;
-        grid-column: 1 / 8;
-        display: grid;
-        grid-template-rows: repeat(6, min-content);
-        grid-gap: 25px;
-        padding-right: 15%;
-    }
-    
-    .info-1__visual{
-        mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1),rgba(0,0,0,0));
-    }
-    
-    section.thirth-section > div.info-10 > div.info-10__text{
-        justify-content: right;
-    }
-
-    section.fourth-section > div.info-10 > div.info-10__text{
-        justify-content: right;
-    }
-
-    section.fourth-section > div.info-10 > div.info-2__visual > img{
-        width: 300px;
-        height: 400px;
-        border-radius: 50px;
-    }
-
-    
-     #principio{
-        color: #F0605C;
-        font-size: 292%;
-    }
-    
-     #final{
-        color: #F0605C;
-        font-size: 292%;
-    }
-    
-    #names{
-        font-size: 292%;
-        margin-right: 80%;
-        color: #F0605C;
-    }
-    
-    /* Fin de tercera section */
-    
-
-    
-    /* Cuarta Seccion */
-    
-    
-    
-   
-    
-    .heading-10{
-        grid-row: 2 / 3;
-        grid-column: 3 / 7;
-        justify-self: center;
-        font-size: 40px;
-        font-weight: 500;
-    }
-    
-    .info-10{
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(8, min-content);
-        grid-row: 4 / -1;
-        grid-column: 1 / -1;
-        grid-gap: 20px;
-        position: relative;
-    }
-    
-    .info-12__text{
-        grid-row: 3 / 4;
-        grid-column: 1 / 5;
-        display: grid;
-        grid-template-rows: repeat(6, min-content);
-        grid-gap: 25px;
-    }
-    
-    .info-10__visual{
-        grid-column: 5 / -1;
-        grid-row: 1 / -1;
-        height: 500px;
-        margin-right: 20px;
-        overflow: hidden;
-    }
-    
-    
-    
-   
-
-    
-    
-    .info-2__visual{
-        grid-column: 6 / -1;
-        grid-row: 1 / -1;
-        height: 500px;
-        margin-right: 20px;
-        overflow: hidden;
-    }
-    
-    section.fourth-section > div.info-10 > div.info-2__visual > img{
-        width: 300px;
-        height: 400px;
-        border-radius: 50px;
-    }
-    
-    .info-3__visual{
-        grid-column: 4 / -1;
-        grid-row: 1 / -1;
-        height: 400px;
-        margin-right: 20px;
-        overflow: hidden;
-    }
-    
-    section.fourth-section > div.info-10 > div.info-3__visual > img{
-        width: 300px;
-        height: 400px;
-        border-radius: 50px;
-    }
-    
-    #cameoImage {
-        margin-left: 126%;
-        margin-top: 33%;
-        width: 90%;
-        font-weight: 400;
-        border: 2.1px solid #080808ce;
-        border-radius: 200px;
-        /* filter: grayscale(1); */
-        opacity: 0.7;
-    }
+    } */
     
     .info-10__text{
         grid-row: 10 / 11;
@@ -650,18 +517,8 @@
         mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1),rgba(0,0,0,0));
     }
     
-    section.fourth-section > div.info-10 > div.info-10__text{
-        justify-content: right;
-    }
-
-    section.fourth-section > div.info-10 > div.info-10__text{
-        justify-content: right;
-    }
-
-    section.fourth-section > div.info-10 > div.info-2__visual > img{
-        width: 300px;
-        height: 400px;
-        border-radius: 50px;
+    section.thirth-section > div.info-10 > div.info-10__text{
+        justify-content: center;
     }
 
     
@@ -681,8 +538,7 @@
         color: #F0605C;
     }
     
-    /* Fin de cuarta section */
-    
+    /* Fin de tercera section */    
     
     
     /* html, body { height: 100%; } */
