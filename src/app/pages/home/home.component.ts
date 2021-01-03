@@ -12,7 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class HomeComponent implements OnInit {
 
-  @ViewChild('fourthSection', {static: true}) fourthSection: ElementRef<HTMLDivElement>;
   @ViewChild('thirthSection', {static: true}) thirthSection: ElementRef<HTMLDivElement>;
   @ViewChild('secondSection', {static: true}) secondSection: ElementRef<HTMLDivElement>;
   @ViewChild('menu', {static: true}) menu: ElementRef<HTMLDivElement>;
@@ -256,7 +255,7 @@ export class HomeComponent implements OnInit {
         trigger: this.document.querySelector('.info-4__visual img'),
         scrub: true,
         toggleClass: 'active',
-        start: '-60% bottom',
+        start: '-40% bottom',
       },
       duration: 1.5,
       width: 0,
@@ -382,6 +381,41 @@ export class HomeComponent implements OnInit {
       delay: 0.6,
     });
     gsap.from(this.imageAngi.nativeElement.childNodes, {
+      duration: 0.7,
+      opacity: 0,
+      y: -30,
+      stagger: 0.2,
+      delay: 0.6,
+    });
+    gsap.from(this.imagePipe.nativeElement.childNodes, {
+      duration: 0.7,
+      opacity: 0,
+      y: -30,
+      stagger: 0.2,
+      delay: 0.6,
+    });
+    gsap.from(this.imageDesi.nativeElement.childNodes, {
+      duration: 0.7,
+      opacity: 0,
+      y: -30,
+      stagger: 0.2,
+      delay: 0.6,
+    });
+    gsap.from(this.imageNueva.nativeElement.childNodes, {
+      duration: 0.7,
+      opacity: 0,
+      y: -30,
+      stagger: 0.2,
+      delay: 0.6,
+    });
+    gsap.from(this.imageNew.nativeElement.childNodes, {
+      duration: 0.7,
+      opacity: 0,
+      y: -30,
+      stagger: 0.2,
+      delay: 0.6,
+    });
+    gsap.from(this.imageLast.nativeElement.childNodes, {
       duration: 0.7,
       opacity: 0,
       y: -30,
