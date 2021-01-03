@@ -12,6 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class HomeComponent implements OnInit {
 
+  @ViewChild('fourthSection', {static: true}) fourthSection: ElementRef<HTMLDivElement>;
   @ViewChild('thirthSection', {static: true}) thirthSection: ElementRef<HTMLDivElement>;
   @ViewChild('secondSection', {static: true}) secondSection: ElementRef<HTMLDivElement>;
   @ViewChild('menu', {static: true}) menu: ElementRef<HTMLDivElement>;
@@ -21,6 +22,9 @@ export class HomeComponent implements OnInit {
   @ViewChild('imageAngi', {static: true}) imageAngi: ElementRef<HTMLDivElement>;
   @ViewChild('imageDesi', {static: true}) imageDesi: ElementRef<HTMLDivElement>;
   @ViewChild('imagePipe', {static: true}) imagePipe: ElementRef<HTMLDivElement>;
+  @ViewChild('imageNueva', {static: true}) imageNueva: ElementRef<HTMLDivElement>;
+  @ViewChild('imageNew', {static: true}) imageNew: ElementRef<HTMLDivElement>;
+  @ViewChild('imageLast', {static: true}) imageLast: ElementRef<HTMLDivElement>;
 
   constructor( @Inject(DOCUMENT) private document: Document ) { }
 
@@ -81,9 +85,49 @@ export class HomeComponent implements OnInit {
       scale: 1.2,
       height: 380,
     });
+
+    gsap.to(this.imageNueva.nativeElement, {
+      scrollTrigger: {
+        trigger: this.imageNueva.nativeElement,
+        scrub: true,
+        start: '80% center'
+      },
+      duration: 1.1,
+      scale: 1.2,
+      height: 380,
+    });
+    gsap.to(this.imageNew.nativeElement, {
+      scrollTrigger: {
+        trigger: this.imageNew.nativeElement,
+        scrub: true,
+        start: '80% center'
+      },
+      duration: 1.1,
+      scale: 1.2,
+      height: 380,
+    });
+    gsap.to(this.imageLast.nativeElement, {
+      scrollTrigger: {
+        trigger: this.imageLast.nativeElement,
+        scrub: true,
+        start: '80% center'
+      },
+      duration: 1.1,
+      scale: 1.2,
+      height: 380,
+    });
     gsap.to(this.document.querySelector('.heading-1'), {
       scrollTrigger: {
         trigger: this.document.querySelector('.heading-1'),
+        scrub: true,
+        start: '150% center',
+      },
+      color: '#fff',
+      duration: 1.5,
+    });
+    gsap.to(this.document.querySelector('.heading-12'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('.heading-12'),
         scrub: true,
         start: '150% center',
       },
@@ -141,9 +185,31 @@ export class HomeComponent implements OnInit {
       y: 40,
       opacity: 0,
     });
+    gsap.from(this.document.querySelector('#testing'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('#testing'),
+        scrub: true,
+        toggleClass: 'active',
+        start: 'top center',
+      },
+      duration: 1.5,
+      y: 40,
+      opacity: 0,
+    });
     gsap.from(this.document.querySelector('#nosotros'), {
       scrollTrigger: {
         trigger: this.document.querySelector('#nosotros'),
+        scrub: true,
+        toggleClass: 'active',
+        start: 'top center',
+      },
+      duration: 1.5,
+      y: 40,
+      opacity: 0,
+    });
+    gsap.from(this.document.querySelector('#test1'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('#test1'),
         scrub: true,
         toggleClass: 'active',
         start: 'top center',
@@ -188,6 +254,40 @@ export class HomeComponent implements OnInit {
     gsap.from(this.document.querySelector('.info-4__visual img'), {
       scrollTrigger: {
         trigger: this.document.querySelector('.info-4__visual img'),
+        scrub: true,
+        toggleClass: 'active',
+        start: '-60% bottom',
+      },
+      duration: 1.5,
+      width: 0,
+      opacity: 0,
+    });
+
+    gsap.from(this.document.querySelector('.info-5__visual img'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('.info-5__visual img'),
+        scrub: true,
+        toggleClass: 'active',
+        start: '-60% bottom',
+      },
+      duration: 1.5,
+      width: 0,
+      opacity: 0,
+    });
+    gsap.from(this.document.querySelector('.info-6__visual img'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('.info-6__visual img'),
+        scrub: true,
+        toggleClass: 'active',
+        start: '-60% bottom',
+      },
+      duration: 1.5,
+      width: 0,
+      opacity: 0,
+    });
+    gsap.from(this.document.querySelector('.info-8__visual img'), {
+      scrollTrigger: {
+        trigger: this.document.querySelector('.info-8__visual img'),
         scrub: true,
         toggleClass: 'active',
         start: '-60% bottom',
